@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codesim"
+version = "0.1.0"
+description = "Multi-signal source code similarity detector. Moss-style but resilient to AST-level obfuscations."
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = [
+    "tree-sitter>=0.23,<0.26",
+    "tree-sitter-language-pack>=0.7",
+]
+
+[project.scripts]
+codesim = "codesim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
