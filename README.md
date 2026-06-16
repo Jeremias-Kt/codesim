@@ -17,7 +17,7 @@ MOSS uses token-stream k-gram hashing with winnowing. Single-token insertions di
 5. Reordering independent statements — defeats MOSS
 6. Replacing `if` with `switch` (or vice versa) — defeats MOSS
 
-Additionally codesim runs locally, code never leaves the system, and there aren't any request limits.
+Additionally `codesim` runs locally, code never leaves the system, and there aren't any request limits.
 `codesim` combines three independent signals to neutralize 1–6:
 
 | Signal | Method | Defeats |
