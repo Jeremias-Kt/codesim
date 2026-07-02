@@ -28,6 +28,7 @@ MOSS uses token-stream k-gram hashing with winnowing. Single-token insertions di
 Ensemble score = weighted Jaccard of signals A+B+C.
 
 Additionally `codesim` runs locally, code never leaves the system, and there aren't any request limits.
+
 ---
 
 ## Install
